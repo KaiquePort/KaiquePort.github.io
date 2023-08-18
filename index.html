@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="assets/style.css" type="text/css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    
+    <title>Nike Air</title>
+</head>
+<body>
+    <header>
+        <nav id="navigation">
+            <a href="#" class="logo">Nike <span>AIR MAX</span> Plus</a>
+            <ul class="nav_menu">
+                <li class="nav_item"><a href="index.html">Home</a></li>
+                <li class="nav_item"><a href="#">Products</a></li>
+                <li class="nav_item"><a href="#">About</a></li>
+                <li class="nav_item"><a href="assets/form.html">Sign up</a></li>
+                <i class='bx bx-search'></i>
+            </ul>
+            <div class="menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="home">
+            <div class="home_img">
+                <img src="assets/img/lateral.jpg" alt="lateral esquerda">
+                <img src="assets/img/lateral_dir.jpg" alt="lateral direita">
+                <img src="assets/img/sola.jpg" alt="sola">
+                <img src="assets/img/topo.jpg" alt="topo">
+                <img src="assets/img/par_front.jpg" alt="frente">
+                <img src="assets/img/par_back.jpg" alt="atrás">
+            </div>
+            <div class="home_text">
+                <h3>Tênis Air Max Plus OG Masculino</h3>
+                <p>Casual</p>
+                <p>R$ 1299,99</p>
+            </div>
+            <div class="tamanhos">
+                <h3>Tamanhos:</h3>
+                <ul>
+                    <li class="btn"><a href="#">38</a></li>
+                    <li class="btn"><a href="#">39</a></li>
+                    <li class="btn"><a href="#">40</a></li>
+                    <li class="btn"><a href="#">41</a></li>
+                    <li class="btn"><a href="#">42</a></li>
+                    <li class="btn"><a href="#">43</a></li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div id="footer_content">
+            <div id="contacts">
+                <img src="assets/img/logo_nike.png" alt="nike logo">
+                <p>Desenvolvido para o seu maior conforto.</p>
+                <div id="footer_sm">
+                    <a href="#" class="footer_link" id="instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="footer_link" id="facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="footer_link" id="whatsapp"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+            </div>
+            <ul class="footer_list">
+                <li><h3>Produtos</h3></li>
+                <li><a href="#">Casual</a></li>
+                <li><a href="#">Esportivo</a></li>
+                <li><a href="#">Social</a></li>
+            </ul>
+            <ul class="footer_list">
+                <li><h3>Formas de pagamento</h3></li>
+                <li><img src="assets/img/cards.png" alt="cartoes"></li>
+            </ul>
+            <div id="footer_subscribe">
+                <h3>Quer receber novidades Nike?</h3>
+                <p>Cadastre seu email para receber novidades!</p>
+                <div id="input_group"> <!-- Caixa de texto para colocar o email-->
+                    <input type="email" id="email">
+                    <button onclick="enviar()">
+                        <i class='bx bx-mail-send' ></i> <!-- Peguei esse do Boxicons-->
+                    </button>
+                </div>
+            </div>       
+        </div>
+        <div id="footer_copyright">
+            &#169 <!-- Comando para chamar o c de copyright-->
+            2023. Kaique Porto, portifolio.
+        </div>
+    </footer>
+<!-- Linkando js -->
+<script src="assets/script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.23/dist/sweetalert2.all.min.js"></script> 
+</body>
+</html>

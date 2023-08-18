@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Mulish', sans-serif;
+}
+:root{
+    --white: #fff;
+    --dark: #070707;
+    --natural:#adadad;
+    --orange: #d68010ef;
+    --orange2: #f78f07e5;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(#797979, #c0c0c0, #fff);
+}
+
+.container{ /* Colocando o conteúdo dentro de uma jan com shadow*/
+    width: 80%;
+    height: 80vh;
+    display: flex;
+    box-shadow: 7px 7px 12px var(--orange);
+}
+
+.form_img{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--natural);
+    padding: 1rem;
+}
+
+.form_img img{
+    width: 31rem;
+}
+
+.form{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #b8b8b8;
+    padding: 3rem;
+}
+
+.form_header{
+    margin-bottom: 3rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.login_button {
+    display: flex;
+    align-items: center;
+}
+.login_button button{
+    border: none;
+    background-color: #f78f07e5;
+    padding: 0.4rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.login_button button:hover{
+    background: var(--orange);
+}
+
+.login_button button a{
+    text-decoration: none;
+    font-weight: 500;
+    color: var(--white);
+}
+
+.form_header h1::after{
+    content: '';
+    display: block;
+    width: 12rem;
+    height: 0.3rem;
+    background-color: #f78f07e5;
+    margin: 0 auto;
+    position: absolute;
+    border-radius: 10px;
+}
+
+.input_group{
+    display: flex;
+    flex-wrap: wrap; /*Pra quebrar*/
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+
+.input_box{/*Box de digitação*/
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.2rem;
+}
+
+.input_box input{
+    margin: 0.6rem 0;
+    padding: 0.7rem 1.1rem;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1.5px 1.5px 6px #1b1b1b27;
+}
+.input_box input:hover{
+    background: #fde2be;
+}
+.input_box input:focus-visible{/* Mudar cor da borda*/
+    outline: 2px solid #f78f07e5;
+}
+
+.input_box label, .gender_title h6{
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--dark);
+}
+
+.input_box input::placeholder{ /*Alterando o placeholder*/
+    color: #070707c4;
+}
+
+.gender_input .gender_group{ /*Formastar a barra de generos*/
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.6rem;
+    padding: 0 0.5rem;
+}
+
+.gender_input{
+    display: flex;
+    align-items: center;
+}
+
+.gender_input input{
+    margin-right: 0.4rem;
+}
+
+.gender_input label{
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #070707c4;
+}
+
+.continue_button button{
+    width: 100%;
+    margin-top: 2.5rem;
+    border: none;
+    background: var(--orange2);
+    padding: 0.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.continue_button button:hover{
+    background-color: var(--orange);
+}
+
+.continue_button button a{
+    text-decoration: none;
+    color: var(--white);
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+@media (max-width:1330px) {
+    .form_img{
+        display: none;
+    }
+    .container{
+        width: 50%;
+    }
+    .form{
+        width: 100%;
+    }
+}
+
+@media (max-width:1040px) {
+    .container{
+        width: 90%;
+        height: auto;
+    }
+    .input_group {
+        flex-direction: column;
+        overflow-y: scroll;
+        flex-wrap: nowrap; /*Pra não quebrar*/
+        max-height: 10rem;
+        padding: 5rem;
+    }
+    .gender_input{
+        margin-top: 2rem;
+    }
+    .gender_group{
+        flex-direction: column;
+    }
+    .gender_input{
+        margin-top: 0.5rem;
+    }
+}

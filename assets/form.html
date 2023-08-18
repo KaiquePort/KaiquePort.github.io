@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="form.css" type="text/css">
+    <title>Nike Air - Login</title>
+</head>
+<body>
+    <div class="container">
+        <div class="form_img">
+            <img src="img/form_img.jpg" alt="nike">
+        </div>
+        <div class="form">
+            <form action="#">
+                <div class="form_header">
+                    <div class="title">
+                        <h1>Cadastre-se</h1>
+                    </div>
+                    <div class="login_button">
+                        <button><a href="#">Já possui uma conta?</a></button>
+                    </div>
+                </div>
+                <div class="input_group">
+                    <div class="input_box">
+                        <label for="firstname">Primeiro nome</label>
+                        <input type="text" id="firtname" name="firstname" placeholder="Digite seu primeiro nome" required>
+                    </div>
+                    <div class="input_box">
+                        <label for="lastname">Sobrenome</label>
+                        <input type="text" id="lastname" name="lastname" placeholder="Digite seu sobrenome" required>
+                    </div>
+                    <div class="input_box">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Digite seu email" required>
+                    </div>
+                    <div class="input_box">
+                        <label for="lasstname">Telefone</label>
+                        <input type="tel" id="number" name="number" placeholder="(xx) xxxx-xxxx" required>
+                    </div>
+                    <div class="input_box">
+                        <label for="password">Senha</label>
+                        <input type="password" id="password" name="password" placeholder="Digite uma senha" required>
+                    </div>
+                    <div class="input_box">
+                        <label for="password">Confirme sua senha</label>
+                        <input type="password" id="confirmpassword" name="confirmpassword" placeholder="Confirme sua senha" required>
+                    </div>
+                </div>
+                <div class="gender_input">
+                    <div class="gender_title">
+                        <h5>Gênero</h5><br>
+                    </div>
+                    <div class="gender_group">
+                        <input type="radio" class="female" name="gender">
+                        <label for="female">Feminino</label>
+                    </div>
+                    <div class="gender_group">
+                        <input type="radio" class="male" name="gender">
+                        <label for="male">Masculino</label>
+                    </div>
+                    <div class="gender_group">
+                        <input type="radio" class="others" name="gender">
+                        <label for="others">Outros</label>
+                    </div>
+                    <div class="gender_group">
+                        <input type="radio" class="none" name="gender">
+                        <label for="none">Prefiro não dizer</label>
+                    </div>
+                </div>
+                <div class="continue_button">
+                    <button><a href="../index.html">Continuar</a></button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
